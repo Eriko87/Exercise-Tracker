@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color:#40514e;
+  text-align:center;
+}
+p{
+  color:red;
+}
+.container{
+  width: 300px;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+}
+.card{
+  margin:30px;
+}
+img{
+  width: 340px;
+  height: 300px;
+  box-shadow: 1px 1px #999;
+}
+form {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 1px 1px #999;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #30e3ca;
+  border: 1px solid grey;
+  box-shadow: 1px 1px #999;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFFEC4;
+}
+
+.logcontainer{
+  font-size: 25px;
+  background-color:#ffffff;
+  width: 900px;
+  height:auto;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: 60px;
+  padding: 5px;
+  text-align:center;
+  box-shadow: 1px 1px #999;
+}
+.log{
+font-size: 18px;
+
+}
+.recordsummary{
+  display:flex;
+  margin: 10px;
+}
+.recordsummary div{
+  background-color: #dce0e0;
+  text-align:left;
+  padding: 10px;
+  margin:5px 5px 5px 50px;
+  border-radius:5px;
+}
+.recordname{
+  display:flex;
+}
+.recordname div{
+  text-align:left;
+  width:300px;
+  margin:5px 0px 5px 100px;
+  
+}
+.record {
+  display:flex; 
+  border-top: 1px solid #E0E0E0;
+}
+.record p{
+  color: black;
+  text-align:left;
+  width:300px;
+  margin:5px 0px 5px 100px;
+}
+.record span{
+  color: grey;
+  margin-right: 30px;
+}
