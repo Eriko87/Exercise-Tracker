@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Exercise Tracker | Free Code Camp</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+      <link href="/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+     <header><h1>Exercise tracker</h1></header>
+      <div class="container">
+        <div class="card">
+          <img src="https://lh3.googleusercontent.com/YnpVRvqvbmV94gRa3ee8RvJtL-IeR6NLf9sjEIaIcS2GdDzf-fTMCG-4KmXY6zseLOi_Pucpoi5-dDYxNDDF2h6jCj8GOQ2HhPLr8M2rOK7KJIlorpVXoZQB-Shh2wQN_cLtfu7KWP0A6N3Dhs8OzzSi-ckGn_504_19MrBzbg85-kJiRo3oX2Qy5BXhu_sA0UVsvX-Gvgwb-4hBIEd5_qL2tNoPoK-eSmc9pI94DM-CKGMlFZdmrc8j69WZKaGlQDpC5_8QWXRDlowcDPjseMfbckmS_KObnd5wggWlxATGYVqK2nfNNvAlBaW9fJLKXbqEPJ83UOyR7dBLdYO8rxmtlz9n0cZmOyaXk55JAndwYsMI3pdIR3M-BluFBtmWce-_E0oWFfP426YQmwRa-h8CjDO8UwMqA4YzRGAQRJjFhIinzeSB6kkkjVo7ZUDyAGNUwaQT2y69h79Q-por8lKvgBsrUz3kejlhac9BjbZn6xNKWS4ZiFIbmmIuLI94eGi5SIyijp3Du8fcmHt06gKWnhtuFkx9_rnlMI6iSXpjL8aqRP3ylP-ih3Uk3qFm6SCumc7podYrzraXGQF-iQu5tfsT_qoAu7VDCMlSAuWBY_7gPMmfiDwgWFNzY-2AXyUM25ZKHBVPy2PbE-ULbkJ6HMTqWRv6=w967-h725-no" alt="createuser">
+          <form action="/api/exercise/new-user" method="post">
+            <h3>Create a New User</h3>
+            <input id="uname" type="text" name="username" placeholder="username" required>
+            <input id="secretcode" type="text" name="secretcode" placeholder="Secret code">
+            <p>Your secret code will be used if you forget your user id.</p>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="card">
+          <img src="https://lh3.googleusercontent.com/sC-KmdZxtYuvx_6rm3tJ3-1-Gh86dPQfUNiiMmsGg_vocWZO0cK1hZi4Ek5XKlV6Ww43h5qLmo7zsGSov7yZOmNnXbZi2aGQ9cLqTqB2E133wWERbVUOj2YvDgBnMdRNhKuvVqkdMisY0OusRE2JNYLePy4r4KG9O_3XUF6s1Hpc6y92utwA7a58LH8GwkuII1nhVlmRPGsVJUTmMZq68GfeKFu69dEyrvgMcv0HjYXTVPMORkTZIWxbki3nt08-EOi5B82FcUnGCNaxNdahQTFvSEnM4ctRRPaw3glc9m7QEoDRRJUadA1Wrui0CiHE4-pAg3GBkUFJXEjZsydo3hbEyQIL9zWpSCJJCeGY9UfncuQyRlqZ67XxL9w7qPulLpCseYZW9vt8XW3IsASrewoJDxJB5GDjr-dM6ySHl889Roh3MZT_2TT568HGeZuIYDBMGBgUReXQ76UaGjdV66tWysF31i4Zo4L9x873tSHt8Z8dnbY3ZMH6-p3E0266_hH02iZkUNapv1Mk4_9Xa04E2y_R-90BaRwdppBw5fFUN8HscxPP5sqxRfRPzZuM0HY1HYnyLy4t2DkQBv_yZDs2xghgy2R_ylcP748_rXOID0DwSB3St9U0Y40ilbRmISU6nXG-SFUaIFbqkVEpJmGNZ-xBsTxB=s800-no" alt="addworkout">
+          <form action="/api/exercise/add" method="post">
+            <h3>Add exercises</h3>
+            <input id="uid" type="text" name="userId" placeholder="userId*" required>
+            <input id="desc" type="text" name="description" placeholder="description*" required>
+            <input id="dur" type="text" name="duration" placeholder="duration* (mins.)" required>
+            <input id="dat" type="date" name="date" placeholder="date (yyyy-mm-dd)" required>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="card">
+          <img src="https://lh3.googleusercontent.com/Me27Dzpx-KMWhnOBimlsJAkFbd3Z3zB1s_7mzyUnNnIp4McEZa4iQRle6uH2T1eXjGbfuVRkLeK-tvio90iVIUxQf8QdQ511AvyzdfQh2hJL-7sTFmHZTFiszpMOXXEFzReBsifvwfov3POD167qNPeQnLgw6P-r2K2_qGOz04gD_UlAEwn9aybqCxb2okKo9VrLTfSDsFJcBGp_2xCqrZvRKzzNhEmV5T2cFz88km1NGQqd8NfToj2NbwsI85EtuQ6HsEIoA_LfJ2OrocZNr3cK0qibfY6ZxX-u9OoSLkw7syX6nob8ng2g-QQpoMPhU-B4CImh0tRK1VZwGPjlQUesDmy3jM2yNtEOkh-FmCwsG7N09GOiWe2yIr026jj8qE6NKgjkQBOFwd1qiK7pyYD8EPojDssinuyiQoJzznli3-2P89uB_BKewk6zQSTx4oJ4OyTSFJQxi-Q2q6YoA79OKDUnbDSZuVYBnkiFqhDz9xjmLA1cMwSe7x8Z4uN3JxIyuh1yVsUYqaZ3iMObKBNA5hIeIvB1znXF3_jdRFsVUnpSdFX6Z6lpzHpRoY18Ca_3EtH2YZzniavvvWiMX_ejJoI2yUkb5WJNBialYdhVZ11hvbxr1A7WJsvj17xdxaBjbkh-OCs73KNtH43x-EAsAYbDVGnu=w967-h725-no" alt="viewlog">
+          <form action="/api/exercise/log" method="post">
+            <h3>View logs</h3>
+            <input id="loguid" type="text" name="userId" placeholder="userId*" required>
+            <input id="start" type="date" name="startdate" placeholder="Start date (yyyy-mm-dd)" required>
+            <input id="end" type="date" name="enddate" placeholder="End date (yyyy-mm-dd)" required>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+     <div class="logcontainer">
+       <h3>Your exercise logs</h3>
+       <div class="log">
+         <div class="recordsummary">
+           <div>User ID : <%= userid%></div>
+           <div>Total workout : <%= record.length %></div>
+           <div>Date range : <%= startdate %> to <%= enddate %></div>
+         </div>
+         <div class="recordname">
+           <div><i class="far fa-calendar-alt"></i> Date</div>
+           <div><i class="far fa-clipboard"></i> Description</div>
+           <div><i class="fas fa-hourglass-half"></i> Duration</div>
+         </div>
+         <div >
+         <% for( var i = 0; i < record.length; i++){ %>
+         <div class="record">
+           <p><%= record[i][0] %></p>
+           <p><%= record[i][1] %></p>
+           <p><%= record[i][2] %> mins</p>
+         </div>
+         <% } %>
+       </div>
+      </div>
+       </div>
+      </div>
+   </body>
+
+</html>
